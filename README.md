@@ -1,4 +1,4 @@
-##📷 FaceRecog - Sistema de Chamada por Reconhecimento Facial
+📷 FaceRecog - Sistema de Chamada por Reconhecimento Facial
 
 O FaceRecog é um projeto web com o objetivo de substituir o tradicional processo manual de chamadas por uma abordagem moderna e eficiente utilizando reconhecimento facial. Idealizado para ambientes educacionais, o sistema permite que professores ou responsáveis realizem a chamada de alunos por meio de uma simples captura de imagem, tornando o processo mais ágil, seguro e automatizado.
 
