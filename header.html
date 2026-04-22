@@ -1,0 +1,114 @@
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+  :root {
+    --dark-bg: #f5f7fa; /* Fundo claro escolar */
+    --highlight-color: #2e86de; /* Azul escolar */
+    --text-light: #222f3e; /* Texto escuro */
+    --navbar-shadow: 0 2px 12px rgba(46, 134, 222, 0.15);
+  }
+  body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 64px;
+  }
+  nav.navbar {
+    background: linear-gradient(90deg, #2e86de 70%, #48dbfb 100%);
+    box-shadow: var(--navbar-shadow);
+    border-bottom: 2px solid var(--highlight-color);
+  }
+  .navbar-brand {
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .navbar-brand i {
+    font-size: 2rem;
+  }
+  .nav-link, .btn-chamada {
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .nav-link:hover, .nav-link.active, .btn-chamada:hover {
+    background: #fff;
+    color: var(--highlight-color) !important;
+    text-decoration: none;
+  }
+  .navbar-toggler {
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .btn-chamada {
+    background: #10ac84;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px #10ac8444;
+    border: none;
+  }
+  .btn-chamada:hover {
+    background: #fff;
+    color: #10ac84 !important;
+    border: 1px solid #10ac84;
+  }
+  @media (max-width: 767px) {
+    .navbar-brand {
+      font-size: 1.3rem;
+    }
+    .btn-chamada {
+      padding: 0.4rem 1rem;
+      font-size: 9rem;
+    }
+  }
+</style>
+
+<header>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <!-- Logo e nome -->
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-mortarboard " > </i> FaceList &#128064;
+      </a>
+      <!-- Botão hamburguer mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="bi bi-list"></span>
+      </button>
+      <!-- Itens do menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center ms-auto">
+          <li class="nav-item my-1 my-md-0">
+            <a href="FazerChamada.html" class="btn btn-chamada d-flex align-items-center gap-2">
+              <i class="bi bi-clipboard-check"></i> Fazer Chamada
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="ListaAlunos.html" class="nav-link d-flex align-items-center gap-2">
+              <i class="bi bi-people"></i> Lista de Alunos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="AddAluno.html" class="nav-link d-flex align-items-center gap-2">
+              <i class="bi bi-person-plus"></i> Cadastrar Aluno
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

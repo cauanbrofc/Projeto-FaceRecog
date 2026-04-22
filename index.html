@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FaceList - Início</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <style>
+    body {
+      background: #f6faff;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #918a8a;
+      overflow-x: hidden;
+    }
+    .hero-section {
+      background: linear-gradient(120deg, #007bff 60%, #00c6ff 100%);
+      color: #fff;
+      border-radius: 2rem;
+      box-shadow: 0 8px 32px 0 rgba(0,123,255,0.15);
+      padding: 4rem 2rem 2rem 2rem;
+      margin-top: 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+    }
+    .hero-section .bi {
+      font-size: 5rem;
+      margin-bottom: 1.5rem;
+      color: #fff;
+      filter: drop-shadow(0 2px 8px #007bff88);
+      animation: bounce 1.5s infinite alternate;
+    }
+    @keyframes bounce {
+      to { transform: translateY(-15px) scale(1.08);}
+    }
+    .hero-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #fff;
+      text-shadow: 0 2px 12px #007bff55;
+      margin-bottom: 1rem;
+    }
+    .hero-highlight {
+      color: #00c6ff;
+      text-shadow: 0 2px 12px #00c6ff55;
+    }
+    .hero-desc {
+      font-size: 1.3rem;
+      color: #eaf6ff;
+      margin-bottom: 2.2rem;
+      text-shadow: 0 2px 8px #007bff33;
+    }
+    .btn-main {
+      background: #fff;
+      color: #007bff;
+      border: none;
+      font-weight: 700;
+      border-radius: 2rem;
+      padding: 0.9rem 2.7rem;
+      font-size: 1.25rem;
+      margin: 1rem 0.7rem;
+      box-shadow: 0 2px 8px 0 #007bff22;
+      transition: all 0.2s;
+      letter-spacing: 1px;
+    }
+    .btn-main:hover, .btn-main:focus {
+      background: #007bff;
+      color: #fff;
+      box-shadow: 0 4px 16px 0 #007bff44;
+      transform: translateY(-2px) scale(1.07);
+    }
+    .wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .features-section {
+      margin-top: -40px;
+      z-index: 3;
+      position: relative;
+    }
+    .feature-card {
+      border: none;
+      border-radius: 1.2rem;
+      box-shadow: 0 2px 16px 0 #007bff11;
+      transition: transform 0.2s, box-shadow 0.2s;
+      background: #fff;
+      color: #fdf7f7;
+      padding: 2.2rem 1.2rem 1.5rem 1.2rem;
+      min-height: 320px;
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card:hover {
+      transform: translateY(-8px) scale(1.04) rotate(-1deg);
+      box-shadow: 0 8px 32px 0 #007bff33;
+      background: linear-gradient(120deg, #eaf6ff 60%, #f6faff 100%);
+    }
+    .feature-icon {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 8px #00c6ff33;
+      animation: pop 1.2s infinite alternate;
+    }
+    @keyframes pop {
+      to { transform: scale(1.13);}
+    }
+    .feature-card h5 {
+      color: #007bff;
+      font-weight: bold;
+      margin-bottom: 0.7rem;
+      font-size: 1.35rem;
+    }
+    .feature-card p {
+      color: #333;
+      font-size: 1.08rem;
+    }
+    /* Floating shapes for extra style */
+    .floating-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.13;
+      z-index: 0;
+      animation: float 6s ease-in-out infinite alternate;
+    }
+    .shape1 { width: 120px; height: 120px; background: #007bff; top: -40px; left: -40px; animation-delay: 0s;}
+    .shape2 { width: 80px; height: 80px; background: #00c6ff; top: 60px; right: -30px; animation-delay: 1.5s;}
+    .shape3 { width: 60px; height: 60px; background: #007bff; bottom: 30px; left: 30px; animation-delay: 2.5s;}
+    .shape4 { width: 90px; height: 90px; background: #00c6ff; bottom: -30px; right: 40px; animation-delay: 3.5s;}
+    @keyframes float {
+      to { transform: translateY(30px) scale(1.08);}
+    }
+    @media (max-width: 767px) {
+      .hero-section { padding: 2.2rem 0.5rem 1.5rem 0.5rem; }
+      .hero-title { font-size: 2rem; }
+      .feature-card { min-height: 220px; padding: 1.2rem 0.7rem 1rem 0.7rem;}
+    }
+  </style>
+</head>
+<body>
+  <div id="header"></div>
+
+  <main role="main" class="container">
+    <div class="hero-section" data-aos="fade-down">
+      <span class="floating-shape shape1"></span>
+      <span class="floating-shape shape2"></span>
+      <span class="floating-shape shape3"></span>
+      <span class="floating-shape shape4"></span>
+      <i class="bi bi-person-bounding-box"></i>
+      <h1 class="hero-title">Bem-vindo ao <span class="hero-highlight">FaceList</span>!</h1>
+      <p class="hero-desc">Gerencie chamadas e reconhecimento facial de alunos de forma <b>moderna</b>, <b>rápida</b> e <b>segura</b>.</p>
+      <div>
+        <a href="FazerChamada.html" class="btn btn-main" data-aos="zoom-in" data-aos-delay="200">
+          <i class="bi bi-camera"></i> Fazer Chamada
+        </a>
+        <a href="ListaAlunos.html" class="btn btn-main" data-aos="zoom-in" data-aos-delay="400">
+          <i class="bi bi-people"></i> Lista de Alunos
+        </a>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 80"><path fill="#f6faff" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,117.3C384,117,480,75,576,58.7C672,43,768,53,864,74.7C960,96,1056,128,1152,128C1248,128,1344,96,1392,80L1440,64L1440,160L1392,160C1344,160,1248,160,1152,160C1056,160,960,160,864,160C768,160,672,160,576,160C480,160,384,160,288,160C192,160,96,160,48,160L0,160Z"></path></svg>
+    </div>
+
+    <section class="row features-section mt-5 mb-5 g-4 justify-content-center">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card feature-card text-center h-100">
+          <div class="feature-icon"><i class="bi bi-emoji-smile"></i></div>
+          <h5>Reconhecimento Facial</h5>
+          <p>Utilize tecnologia de ponta para identificar alunos de forma automática e segura.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
+        <div class="card feature-card text-center h-100">
+          <div class="feature-icon"><i class="bi bi-clock-history"></i></div>
+          <h5>Chamada Rápida</h5>
+          <p>Registre a presença em segundos, sem papelada e sem filas.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card feature-card text-center h-100">
+          <div class="feature-icon"><i class="bi bi-shield-lock"></i></div>
+          <h5>Segurança e Privacidade</h5>
+          <p>Seus dados protegidos com criptografia e acesso restrito.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
