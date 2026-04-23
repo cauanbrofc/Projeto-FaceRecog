@@ -371,10 +371,8 @@ python -m flask run --port 5001
 
 Depois de instalar com sucesso:
 
-1. **(Obrigatório)** [Leia GUIA_RAPIDO.md](GUIA_RAPIDO.md)
-2. **(Recomendado)** [Leia RECONHECIMENTO_FACIAL.md](RECONHECIMENTO_FACIAL.md) (documentação técnica)
-3. **(Opcional)** Personalize os limites em [banco.py](banco.py)
-4. **(Opcional)** Teste com `python test_face_recognition.py`
+1. **(Opcional)** Personalize os limites em [banco.py](banco.py)
+2. **(Opcional)** Teste com `python test_face_recognition.py`
 
 ---
 
@@ -405,9 +403,9 @@ Depois de instalar com sucesso:
 ## 📞 Suporte e Contato
 
 Encontrou um bug? Tem uma sugestão?
-- 📧 Email: seu.email@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/seu-usuario/facerecog/issues)
-- 💬 Discussões: [GitHub Discussions](https://github.com/seu-usuario/facerecog/discussions)
+- 📧 Email: jesuscauan729@gmail.com
+- 🐛 Issues: [GitHub Issues](https://github.com/cauanbrofc/Projeto-FaceRecog/issues)
+
 
 ---
 
@@ -434,7 +432,6 @@ Desenvolvido com ❤️ para educadores e estudantes.
 
 **Pronto para começar?** → [Volte para Instalação Passo a Passo](#-instalação-passo-a-passo)
 
-**Dúvidas técnicas?** → [Leia a Documentação Completa](RECONHECIMENTO_FACIAL.md)
 
 ⭐ Se este projeto ajudou você, dê uma **estrela no GitHub**! ⭐
 
